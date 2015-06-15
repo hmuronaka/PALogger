@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B73827D5B1CCFA346081EB65 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B4FD851B0D2E24932808F6 /* libPods.a */; };
 		D62B25BC1B2F1262005D97A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62B25BB1B2F1262005D97A9 /* AppDelegate.swift */; };
 		D62B25BE1B2F1262005D97A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62B25BD1B2F1262005D97A9 /* ViewController.swift */; };
 		D62B25C11B2F1262005D97A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D62B25BF1B2F1262005D97A9 /* Main.storyboard */; };
 		D62B25C31B2F1262005D97A9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D62B25C21B2F1262005D97A9 /* Images.xcassets */; };
 		D62B25C61B2F1262005D97A9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D62B25C41B2F1262005D97A9 /* LaunchScreen.xib */; };
 		D62B25D21B2F1262005D97A9 /* PAUDPLoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62B25D11B2F1262005D97A9 /* PAUDPLoggerTests.swift */; };
+		D62B25DD1B2F15AB005D97A9 /* LogWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62B25DC1B2F15AB005D97A9 /* LogWriter.swift */; };
+		D68A8E571B2F19E5007F7226 /* LogLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68A8E561B2F19E5007F7226 /* LogLevel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		45B4FD851B0D2E24932808F6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		865B596D1482750E969ACEDE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		98C79EF6D56E9AD2CCF146DC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D62B25B61B2F1262005D97A9 /* PAUDPLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PAUDPLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D62B25BA1B2F1262005D97A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D62B25BB1B2F1262005D97A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +42,8 @@
 		D62B25CB1B2F1262005D97A9 /* PAUDPLoggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PAUDPLoggerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D62B25D01B2F1262005D97A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D62B25D11B2F1262005D97A9 /* PAUDPLoggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAUDPLoggerTests.swift; sourceTree = "<group>"; };
+		D62B25DC1B2F15AB005D97A9 /* LogWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogWriter.swift; path = PAUDPLogger/LogWriter.swift; sourceTree = "<group>"; };
+		D68A8E561B2F19E5007F7226 /* LogLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogLevel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B73827D5B1CCFA346081EB65 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +65,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		80D78C5DB8AEE49EA2CBEA00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45B4FD851B0D2E24932808F6 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A20976F20706438C375210B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				98C79EF6D56E9AD2CCF146DC /* Pods.debug.xcconfig */,
+				865B596D1482750E969ACEDE /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D62B25AD1B2F1262005D97A9 = {
 			isa = PBXGroup;
 			children = (
+				D62B25DB1B2F126F005D97A9 /* Class */,
 				D62B25B81B2F1262005D97A9 /* PAUDPLogger */,
 				D62B25CE1B2F1262005D97A9 /* PAUDPLoggerTests */,
 				D62B25B71B2F1262005D97A9 /* Products */,
+				A20976F20706438C375210B0 /* Pods */,
+				80D78C5DB8AEE49EA2CBEA00 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +141,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D62B25DB1B2F126F005D97A9 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				D62B25DC1B2F15AB005D97A9 /* LogWriter.swift */,
+				D68A8E561B2F19E5007F7226 /* LogLevel.swift */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +157,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D62B25D51B2F1262005D97A9 /* Build configuration list for PBXNativeTarget "PAUDPLogger" */;
 			buildPhases = (
+				04A0891F1174C74EC621AA49 /* Check Pods Manifest.lock */,
 				D62B25B21B2F1262005D97A9 /* Sources */,
 				D62B25B31B2F1262005D97A9 /* Frameworks */,
 				D62B25B41B2F1262005D97A9 /* Resources */,
+				A25909D6C682CD452E251772 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,6 +247,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04A0891F1174C74EC621AA49 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A25909D6C682CD452E251772 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D62B25B21B2F1262005D97A9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -214,6 +287,8 @@
 			files = (
 				D62B25BE1B2F1262005D97A9 /* ViewController.swift in Sources */,
 				D62B25BC1B2F1262005D97A9 /* AppDelegate.swift in Sources */,
+				D62B25DD1B2F15AB005D97A9 /* LogWriter.swift in Sources */,
+				D68A8E571B2F19E5007F7226 /* LogLevel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +415,7 @@
 		};
 		D62B25D61B2F1262005D97A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98C79EF6D56E9AD2CCF146DC /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PAUDPLogger/Info.plist;
@@ -350,6 +426,7 @@
 		};
 		D62B25D71B2F1262005D97A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 865B596D1482750E969ACEDE /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PAUDPLogger/Info.plist;
@@ -411,6 +488,7 @@
 				D62B25D71B2F1262005D97A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D62B25D81B2F1262005D97A9 /* Build configuration list for PBXNativeTarget "PAUDPLoggerTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +497,7 @@
 				D62B25DA1B2F1262005D97A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
