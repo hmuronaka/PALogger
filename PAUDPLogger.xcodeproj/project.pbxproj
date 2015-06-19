@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B73827D5B1CCFA346081EB65 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B4FD851B0D2E24932808F6 /* libPods.a */; };
+		D62735781B2FD50800023FED /* UDPLogWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62735771B2FD50800023FED /* UDPLogWriter.swift */; };
 		D62B25BC1B2F1262005D97A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62B25BB1B2F1262005D97A9 /* AppDelegate.swift */; };
 		D62B25BE1B2F1262005D97A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62B25BD1B2F1262005D97A9 /* ViewController.swift */; };
 		D62B25C11B2F1262005D97A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D62B25BF1B2F1262005D97A9 /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 		D62B25D21B2F1262005D97A9 /* PAUDPLoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62B25D11B2F1262005D97A9 /* PAUDPLoggerTests.swift */; };
 		D62B25DD1B2F15AB005D97A9 /* LogWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62B25DC1B2F15AB005D97A9 /* LogWriter.swift */; };
 		D68A8E571B2F19E5007F7226 /* LogLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68A8E561B2F19E5007F7226 /* LogLevel.swift */; };
+		D6BBE05F1B33BD5B0014A5B7 /* LogLevelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BBE05E1B33BD5B0014A5B7 /* LogLevelTest.swift */; };
+		D6BBE0601B33BE0D0014A5B7 /* LogLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68A8E561B2F19E5007F7226 /* LogLevel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +35,8 @@
 		45B4FD851B0D2E24932808F6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		865B596D1482750E969ACEDE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		98C79EF6D56E9AD2CCF146DC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D62735771B2FD50800023FED /* UDPLogWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UDPLogWriter.swift; path = PAUDPLogger/Classes/UDPLogWriter.swift; sourceTree = "<group>"; };
+		D62735791B2FD5BB00023FED /* PAUDPLogger-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PAUDPLogger-Bridging-Header.h"; sourceTree = "<group>"; };
 		D62B25B61B2F1262005D97A9 /* PAUDPLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PAUDPLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D62B25BA1B2F1262005D97A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D62B25BB1B2F1262005D97A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +49,7 @@
 		D62B25D11B2F1262005D97A9 /* PAUDPLoggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAUDPLoggerTests.swift; sourceTree = "<group>"; };
 		D62B25DC1B2F15AB005D97A9 /* LogWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogWriter.swift; path = PAUDPLogger/LogWriter.swift; sourceTree = "<group>"; };
 		D68A8E561B2F19E5007F7226 /* LogLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogLevel.swift; sourceTree = "<group>"; };
+		D6BBE05E1B33BD5B0014A5B7 /* LogLevelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogLevelTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +135,7 @@
 			children = (
 				D62B25D11B2F1262005D97A9 /* PAUDPLoggerTests.swift */,
 				D62B25CF1B2F1262005D97A9 /* Supporting Files */,
+				D6BBE05E1B33BD5B0014A5B7 /* LogLevelTest.swift */,
 			);
 			path = PAUDPLoggerTests;
 			sourceTree = "<group>";
@@ -145,7 +152,9 @@
 			isa = PBXGroup;
 			children = (
 				D62B25DC1B2F15AB005D97A9 /* LogWriter.swift */,
+				D62735771B2FD50800023FED /* UDPLogWriter.swift */,
 				D68A8E561B2F19E5007F7226 /* LogLevel.swift */,
+				D62735791B2FD5BB00023FED /* PAUDPLogger-Bridging-Header.h */,
 			);
 			name = Class;
 			sourceTree = "<group>";
@@ -286,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D62B25BE1B2F1262005D97A9 /* ViewController.swift in Sources */,
+				D62735781B2FD50800023FED /* UDPLogWriter.swift in Sources */,
 				D62B25BC1B2F1262005D97A9 /* AppDelegate.swift in Sources */,
 				D62B25DD1B2F15AB005D97A9 /* LogWriter.swift in Sources */,
 				D68A8E571B2F19E5007F7226 /* LogLevel.swift in Sources */,
@@ -297,6 +307,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D62B25D21B2F1262005D97A9 /* PAUDPLoggerTests.swift in Sources */,
+				D6BBE0601B33BE0D0014A5B7 /* LogLevel.swift in Sources */,
+				D6BBE05F1B33BD5B0014A5B7 /* LogLevelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,9 +430,12 @@
 			baseConfigurationReference = 98C79EF6D56E9AD2CCF146DC /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = PAUDPLogger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PAUDPLogger-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -429,9 +444,11 @@
 			baseConfigurationReference = 865B596D1482750E969ACEDE /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = PAUDPLogger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PAUDPLogger-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -439,6 +456,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -450,6 +468,9 @@
 				INFOPLIST_FILE = PAUDPLoggerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PAUDPLogger.app/PAUDPLogger";
 			};
 			name = Debug;
@@ -458,6 +479,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -465,6 +487,8 @@
 				INFOPLIST_FILE = PAUDPLoggerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PAUDPLogger.app/PAUDPLogger";
 			};
 			name = Release;
