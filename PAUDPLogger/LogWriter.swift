@@ -9,9 +9,11 @@
 import Foundation
 
 protocol LogWriterDelegate {
-    
     func printLog(message:String);
-    
+}
+
+protocol LogMessageFormatterDelegate {
+    func format(datetime:NSDate!, logLevel:LogLevel, message:String)
 }
 
 
@@ -19,14 +21,17 @@ class LogWriter {
     
     var delegate:LogWriterDelegate?
     
+    var formatter:LogMessageFormatter?
+    
     var logLevel:LogLevel
     
     convenience init() {
         self.init(logLevel:LogLevel.Info)
     }
     
-    init(logLevel:LogLevel) {
+    init(logLevel:LogLevel, formatter:LogMessageFormatter) {
         self.logLevel = logLevel
+        self.formatter = formatter
     }
     
     func log(logLevel:LogLevel, message:String) {

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B73827D5B1CCFA346081EB65 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B4FD851B0D2E24932808F6 /* libPods.a */; };
+		D612CA991B33E6DA0053AA9B /* LogMessageFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D612CA981B33E6DA0053AA9B /* LogMessageFormatter.swift */; };
 		D62735781B2FD50800023FED /* UDPLogWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62735771B2FD50800023FED /* UDPLogWriter.swift */; };
 		D62B25BC1B2F1262005D97A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62B25BB1B2F1262005D97A9 /* AppDelegate.swift */; };
 		D62B25BE1B2F1262005D97A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62B25BD1B2F1262005D97A9 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 		45B4FD851B0D2E24932808F6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		865B596D1482750E969ACEDE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		98C79EF6D56E9AD2CCF146DC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D612CA981B33E6DA0053AA9B /* LogMessageFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogMessageFormatter.swift; path = PAUDPLogger/LogMessageFormatter.swift; sourceTree = "<group>"; };
 		D62735771B2FD50800023FED /* UDPLogWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UDPLogWriter.swift; path = PAUDPLogger/Classes/UDPLogWriter.swift; sourceTree = "<group>"; };
 		D62735791B2FD5BB00023FED /* PAUDPLogger-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PAUDPLogger-Bridging-Header.h"; sourceTree = "<group>"; };
 		D62B25B61B2F1262005D97A9 /* PAUDPLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PAUDPLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				D62B25DC1B2F15AB005D97A9 /* LogWriter.swift */,
+				D612CA981B33E6DA0053AA9B /* LogMessageFormatter.swift */,
 				D62735771B2FD50800023FED /* UDPLogWriter.swift */,
 				D68A8E561B2F19E5007F7226 /* LogLevel.swift */,
 				D62735791B2FD5BB00023FED /* PAUDPLogger-Bridging-Header.h */,
@@ -299,6 +302,7 @@
 				D62B25BC1B2F1262005D97A9 /* AppDelegate.swift in Sources */,
 				D62B25DD1B2F15AB005D97A9 /* LogWriter.swift in Sources */,
 				D68A8E571B2F19E5007F7226 /* LogLevel.swift in Sources */,
+				D612CA991B33E6DA0053AA9B /* LogMessageFormatter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
